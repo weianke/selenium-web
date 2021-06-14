@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 from selenium import webdriver
+import pytest
+
 
 class TestHogWards():
     def setup(self):
@@ -16,3 +18,6 @@ class TestHogWards():
         self.driver.find_element_by_link_text("社团").click()
         self.driver.find_element_by_link_text("社团").click()
         self.driver.find_element_by_css_selector(".topic-22621.title > a").click()
+
+if __name__ == '__main__':
+    pytest.main(['-v', '-s', 'test_hogwards.py'])

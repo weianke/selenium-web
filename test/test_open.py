@@ -39,3 +39,6 @@ class TestTestopen():
         self.driver.switch_to.window(self.vars["root"])
         self.driver.close()
         self.driver.switch_to.window(self.vars["undefined"])
+
+if __name__ == '__main__':
+    pytest.main(['-v', '-s', 'test_open.py'])
