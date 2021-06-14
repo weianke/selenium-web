@@ -1,3 +1,3 @@
 ## selenium + ptython
 
-自动化测试脚本
+学习自动化测试脚本
