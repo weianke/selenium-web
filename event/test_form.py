@@ -18,7 +18,6 @@ class TestFrom():
         self.driver.find_element_by_id("user_login").send_keys('123')
         self.driver.find_element_by_id("user_password").send_keys('password')
         # self.driver.find_element_by_id("user_remember_me").click()
-        报错提示
         element1 = self.driver.find_element_by_css_selector('#user_remember_me')
         self.driver.execute_script("arguments[0].click();", element1)
         self.driver.find_element_by_xpath('//*[@id="new_user"]/div[4]/input').click()
