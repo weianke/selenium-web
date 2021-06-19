@@ -4,7 +4,6 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-
 class TestChrome():
     def setup(self):
         options = Options()
